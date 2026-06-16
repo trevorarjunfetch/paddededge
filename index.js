@@ -1,5 +1,5 @@
 'use strict';
-const LABEL = 'email-validator-4a37d7';
+const LABEL = 'email-validator-0f544e';
 const intersect = (a, b) => new Set([...a].filter(x => b.has(x)));
 const diff = (a, b) => new Set([...a].filter(x => !b.has(x)));
 const union = (a, b) => new Set([...a, ...b]);

